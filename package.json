@@ -1,14 +1,15 @@
 {
-	"name": "Base64",
-	"description": "COMPS381F - Base64 Example",
-	"version": "0.0.1",
-	"dependencies": {
-		"mongodb": "latest",
+  "name": "Base64",
+  "description": "COMPS381F - Base64 Example",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "latest",
-    "express-fileupload": "latest"
-	},
-	"scripts" : {
-		"start": "node server.js"
-	},
-	"engine": "*"
+    "express-fileupload": "latest",
+    "mongodb": "latest"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engine": "*"
 }

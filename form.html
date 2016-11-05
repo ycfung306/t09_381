@@ -5,8 +5,14 @@
             action='http://localhost:8099/upload'
             method='post'
             encType="multipart/form-data">
-                <input type="file" name="sampleFile" />
+                <input type='file' name='sampleFile' /><br/>
+		<input type='text' name='caption' placeholder="Caption here" /><br/>
+		<input type='date' name='date' id='date' /><br/>
                 <input type='submit' value='Upload!' />
         </form>		
     </body>
 </html>
+
+<script>
+document.getElementById('date').valueAsDate = new Date();
+</script>

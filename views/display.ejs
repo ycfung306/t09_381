@@ -1,0 +1,12 @@
+<html>
+  <head><title>Photos</title></head>
+  <body><center>
+    <H2>Photos</H2>
+    <% for (var i=0; i<photos.length; i++) { %>
+      <hr/>
+      <img src="http://localhost:8099/download?key=<%= photos[i]._id %>" /> <br/>
+      <%= photos[i].caption %><br/>
+      Date: <%= photos[i].month %>/<%= photos[i].year %><br/> 
+    <% } %>
+  </center></body>
+</html>
